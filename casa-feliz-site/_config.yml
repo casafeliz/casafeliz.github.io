@@ -1,0 +1,10 @@
+title: Casafeliz
+email: shiroku.72@daum.net
+description: 'Home page for my lovely pet, Lucky!'
+baseurl: casa-feliz-site
+url: 'https://casafeliz.github.io/'
+twitter_username: shiroku
+github_username: casafeliz
+theme: minima
+plugins:
+  - jekyll-feed
