@@ -4,6 +4,6 @@
 
 layout: home
 ---
-| - ![Lucky]({{site.url}}/assets/img/lucky01.jpg){:class="img-responsive"} |
+| ![Lucky]({{site.url}}/assets/img/lucky01.jpg){:class="img-responsive"} |
 |:--:|
 | 한 밤에 중앙 공원에서 ...(럭키의 하루!) |

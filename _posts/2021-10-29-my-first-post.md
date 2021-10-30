@@ -4,7 +4,7 @@ layout: post
 date: '2021-10-29 23:52:29 +0900'
 categories: python
 ---
-| - ![Lucky]({{site.url}}/assets/img/lucky03.jpg){:class="img-responsive"} |
+| ![Lucky]({{site.url}}/assets/img/lucky03.jpg){:class="img-responsive"} |
 |:--:|
 | 화창한 가능날 벤치에서 ...(럭키의 하루!) |
 
