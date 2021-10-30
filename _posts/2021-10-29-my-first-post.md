@@ -1,12 +1,15 @@
 ---
-title: 'List Comprehension'
+title: List Comprehension
 layout: post
 date: '2021-10-29 23:52:29 +0900'
-categories: python
+categories:
+- ''
+- python
 ---
-| ![Lucky]({{site.url}}/assets/img/lucky03.jpg){:class="img-responsive"} |
+
+| ![Lucky]({{site.url}}/assets/img/lucky01.jpg){:class="img-responsive"} |
 |:--:|
-| 화창한 가능날 벤치에서 ...(럭키의 하루!) |
+| 한 밤에 중앙 공원에서 ...(럭키의 하루!) |
 
 ### map과 filter 대신에 리스트 컴프리헨션을 사용하자
 #### 리스트 a에 있는 각 숫자의 제곱을 계산할 경우

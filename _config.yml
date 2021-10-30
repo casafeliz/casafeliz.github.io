@@ -1,9 +1,8 @@
-title: Casafeliz
+title: Casafeliz Blog Post
 email: shiroku.72@daum.net
-description: Home Page of My Lovely Pet Lucky
+description: 파이선 관련 스터디 내용을 정리하기 위한 블로그, 럭키의 귀여운 사진은 덤으로 ㅋㅋ
 baseurl: ''
 url: 'https://casafeliz.github.io'
-twitter_username: shiroku
 github_username: casafeliz
 theme: minima
 plugins:
