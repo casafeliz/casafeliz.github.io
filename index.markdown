@@ -4,3 +4,6 @@
 
 layout: home
 ---
+| <img data-action="zoom" src='{{ "/assets/img/lucky01.jpg" | relative_url }}' alt='absolute'> |
+|:--:|
+| 한 밤에 중앙 공원에서 ...(럭키의 하루!) |
