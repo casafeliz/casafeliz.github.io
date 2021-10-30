@@ -4,7 +4,7 @@ layout: post
 date: '2021-10-29 23:52:29 +0900'
 categories: python
 ---
-| <img data-action="zoom" src='{{ "/assets/img/lucky03.jpg" | relative_url }}' alt='absolute'> |
+| - ![Lucky]({{site.url}}/assets/img/lucky03.jpg){:class="img-responsive"} |
 |:--:|
 | 화창한 가능날 벤치에서 ...(럭키의 하루!) |
 
