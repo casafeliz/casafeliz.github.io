@@ -1,8 +1,4 @@
 ---
-title: 럭키의 하루
+title: 슈나우져 럭키 블로그
 layout: home
 ---
-
-| ![Lucky]({{site.url}}/assets/img/lucky03.jpg){:class="img-responsive"} |
-|:--:|
-| 화창한 가을날 벤치에서 ... |

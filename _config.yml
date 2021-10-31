@@ -4,6 +4,8 @@ description: 파이선 관련 스터디 내용을 정리하기 위한 블로그,
 baseurl: ''
 url: 'https://casafeliz.github.io'
 github_username: casafeliz
-theme: minima
+theme: jekyll-athena
 plugins:
   - jekyll-feed
+
+destination: public
