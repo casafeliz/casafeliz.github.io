@@ -1,9 +1,25 @@
+# setup
 title: Casafeliz Blog Post
+tagline: '~lucky~'
 email: shiroku.72@daum.net
-description: 파이선 관련 스터디 내용을 정리하기 위한 블로그, 럭키의 귀여운 사진은 덤으로 ㅋㅋ
+description: 파이선 관련 스터디 내용과 럭키의 귀여운 사진들!
 baseurl: ''
 url: 'https://casafeliz.github.io'
 github_username: casafeliz
-theme: minima
+paginate: 5
+permalink: pretty
+
+# about / contact
+author:
+  name: Casafeliz
+  url: https://casafeliz.github.io/
+  email: shiroku.72@daum.net
+
+
 plugins:
-  - jekyll-feed
+  - jekyll-paginate
+
+# Custom vars
+version: 0.0.1
+github:
+  repo: https://github.com/casafeliz/casafeliz.github.io.git
