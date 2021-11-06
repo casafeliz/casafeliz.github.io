@@ -23,3 +23,4 @@ plugins:
 version: 0.0.1
 github:
   repo: https://github.com/casafeliz/casafeliz.github.io.git
+  url: https://github.com/casafeliz/casafeliz.github.io/tree/master/
