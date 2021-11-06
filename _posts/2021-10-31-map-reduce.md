@@ -7,13 +7,6 @@ date: '2021-10-31 12:56:25'
 tags:
 - map
 ---
-
-### import library
-{% highlight ruby %}
-import os
-from threading import Thread
-{% endhighlight %}
-
 ### Input Class 선언
 {% highlight ruby %}
 class InputData(object):
@@ -44,7 +37,7 @@ class FileInputData(InputData):
         for name in os.listdir(path):
             yield cls(os.path.join(path, name))
 {% endhighlight %}
-
+<!--more-->
 ### Worker Class 선언
 {% highlight ruby %}
 class Worker(object):

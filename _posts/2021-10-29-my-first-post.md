@@ -13,6 +13,7 @@ categories:
 
 ### map과 filter 대신에 리스트 컴프리헨션을 사용하자
 #### 리스트 a에 있는 각 숫자의 제곱을 계산할 경우
+<!--more-->
 {% highlight ruby %}
 a = [1,2,3,4,5,6,7,8,9,10]
 squares = [x**2 for x in a]

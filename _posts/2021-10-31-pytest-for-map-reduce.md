@@ -11,22 +11,7 @@ layout: post
 ---
 
 ### conftest.py
-{% highlight ruby %}
-import pytest
-import string
-from random import randint
-from random import choice
-from datetime import datetime, timedelta
-import os
-import shutil
-{% endhighlight %}
-{% highlight ruby %}
-def remove_dir(path: object) -> object:
-    if os.path.isdir(path):
-        shutil.rmtree(path)
-    else:
-        raise ValueError(f"path error: {path}")
-{% endhighlight %}
+...
 {% highlight ruby %}
 @pytest.fixture
 def tmp_dir():
@@ -68,6 +53,7 @@ def elapsed_time():
     elapsed = datetime.now() - start
     print(f"\nruntime={elapsed.total_seconds():.3f}sec")
 {% endhighlight %}
+<!--more-->
 ### test for input data
 {% highlight ruby %}
 import pytest
