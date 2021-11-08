@@ -62,13 +62,13 @@ def connect_to(filepath):
 
 def test_connect_to_exception_check():
     sqlite_factory = connect_to("data/person.sq3")
-    assert sqlite_factory == None
+    assert sqlite_factory is None
 
 
 @pytest.mark.parametrize("filepath", ["data/donut.json", "data/person.xml"])
 def test_connect_to_ok(filepath):
     factory = connect_to(filepath)
-    assert factory != None
+    assert factory is not None
 
 
 @pytest.mark.parametrize("filepath, size", [("data/donut.json", 3)])
@@ -82,7 +82,7 @@ def test_json_factory_ok(filepath, size):
 def test_xml_factory_ok(filepath, size):
     xml_factory = connect_to(filepath)
     xml_data = xml_factory.parsed_data
-    liars = xml_data.findall(f".//person[lastName='Liar']")
+    liars = xml_data.findall(".//person[lastName='Liar']")
     assert isinstance(liars, object)
     assert size == len(liars)
 
@@ -94,7 +94,7 @@ if __name__ == "__main__":
     # xml example
     xml_factory = connect_to("data/person.xml")
     xml_data = xml_factory.parsed_data
-    liars = xml_data.findall(f".//person[lastName='Liar']")
+    liars = xml_data.findall(".//person[lastName='Liar']")
     print("found : {} persons".format(len(liars)))
     for liar in liars:
         print(f"first name: {liar.find('firstName').text}")
