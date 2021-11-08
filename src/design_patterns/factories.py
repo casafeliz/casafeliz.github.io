@@ -24,7 +24,7 @@ class Point1:
 
 
 class Point2:
-    def __init__(self, x, y):
+    def __init__(self, x=0, y=0):
         self.x = x
         self.y = y
 
@@ -41,7 +41,7 @@ class Point2:
 
 
 class Point3:
-    def __init__(self, x, y):
+    def __init__(self, x=0, y=0):
         self.x = x
         self.y = y
 
@@ -64,9 +64,9 @@ if __name__ == "__main__":
     p_cartesian = Point1(2, 3, CoordinateSystem.CARTESIAN)
     p_polar = Point1(1, 2, CoordinateSystem.POLAR)
     print(p_cartesian, p_polar)
-    p1 = Point2(2, 3)
+    p1 = Point2.new_cartesian_point(2, 3)
     p2 = Point2.new_polar_point(1, 2)
     print(p1, p2)
-    p3 = Point3(2, 3)
+    p3 = Point3.factory.new_cartesian_point(2, 3)
     p4 = Point3.factory.new_polar_point(1, 2)
     print(p3, p4)

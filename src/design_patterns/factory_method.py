@@ -14,7 +14,7 @@ import pytest
 class JSONConnector:
     def __init__(self, filepath):
         self.data = dict()
-        with open(filepath, mode='r', encoding='utf-8') as f:
+        with open(filepath, mode="r", encoding="utf-8") as f:
             self.data = json.load(f)
 
     @property
@@ -37,9 +37,9 @@ def connection_factory(filepath):
     :param filepath: file path for json or xml
     :return: JSONConnector or XMLConnector
     """
-    if filepath.endswith('json'):
+    if filepath.endswith("json"):
         connector = JSONConnector
-    elif filepath.endswith('xml'):
+    elif filepath.endswith("xml"):
         connector = XMLConnector
     else:
         raise ValueError(f"Cannot connect to {filepath}")
@@ -61,7 +61,7 @@ def connect_to(filepath):
 
 
 def test_connect_to_exception_check():
-    sqlite_factory = connect_to('data/person.sq3')
+    sqlite_factory = connect_to("data/person.sq3")
     assert sqlite_factory == None
 
 
@@ -87,19 +87,22 @@ def test_xml_factory_ok(filepath, size):
     assert size == len(liars)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # check exception handling
-    sqlite_factory = connect_to('data/person.sq3')
+    sqlite_factory = connect_to("data/person.sq3")
     print(sqlite_factory)
     # xml example
-    xml_factory = connect_to('data/person.xml')
+    xml_factory = connect_to("data/person.xml")
     xml_data = xml_factory.parsed_data
     liars = xml_data.findall(f".//person[lastName='Liar']")
     print("found : {} persons".format(len(liars)))
     for liar in liars:
         print(f"first name: {liar.find('firstName').text}")
         print(f"last name: {liar.find('lastName').text}")
-        [print(f"phone number ({p.attrib['type']}):", p.text) for p in liar.find('phoneNumbers')]
+        [
+            print(f"phone number ({p.attrib['type']}):", p.text)
+            for p in liar.find("phoneNumbers")
+        ]
     print()
 
     json_factory = connect_to("data/donut.json")
@@ -108,4 +111,4 @@ if __name__ == '__main__':
     for donut in json_data:
         print(f"name: {donut['name']}")
         print(f"price: ${donut['ppu']}")
-        [print(f"topping: {t['id']} {t['type']}") for t in donut['topping']]
+        [print(f"topping: {t['id']} {t['type']}") for t in donut["topping"]]
