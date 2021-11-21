@@ -1,19 +1,19 @@
 # setup
-title: Casafeliz Blog Post
+title: Schuna Blog Post
 tagline: '~lucky~'
 email: shiroku.72@daum.net
 description: 파이선 관련 스터디 내용과 럭키의 귀여운 사진들!
 baseurl: ''
-url: 'https://casafeliz.github.io'
-github_username: casafeliz
+url: 'https://schuna.github.io'
+github_username: schuna
 paginate: 5
 permalink: pretty
 excerpt_separator: <!--more-->
 
 # about / contact
 author:
-  name: Casafeliz
-  url: https://casafeliz.github.io/
+  name: schuna
+  url: https://schuna.github.io/
   email: shiroku.72@daum.net
 
 
@@ -23,5 +23,5 @@ plugins:
 # Custom vars
 version: 0.0.1
 github:
-  repo: https://github.com/casafeliz/casafeliz.github.io.git
-  url: https://github.com/casafeliz/casafeliz.github.io/tree/master/
+  repo: https://github.com/schuna/schuna.github.io.git
+  url: https://github.com/schuna/schuna.github.io/tree/master/
