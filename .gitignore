@@ -6,3 +6,5 @@ vendor
 .DS_Store
 .idea
 .coverage
+.DS_Store
+__pycache__
