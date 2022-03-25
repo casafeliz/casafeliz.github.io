@@ -1,9 +1,7 @@
 ---
-title: 디자인 원칙
-categories:
-- design_pattern
+title: Design Principle
+date: '2022-03-26 08:44:16'
 layout: post
-date: '2022-03-25 23:58:11'
 ---
 
 ##  애플리케이션에서 달라지는 부분을 찾아 내고, 달라지지 않는 부분으로 부터 분리 시킨다.
