@@ -9,6 +9,7 @@ github_username: schuna
 paginate: 5
 permalink: pretty
 excerpt_separator: <!--more-->
+future: true
 
 # about / contact
 author:
