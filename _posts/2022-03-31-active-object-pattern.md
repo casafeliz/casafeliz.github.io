@@ -74,7 +74,7 @@ class WakeupCommand(Command):
 
 SleepCommand의 생성자는 3개의 인자를 갖는다.
 첫 번째는 ms 단위의 지연 시간이다. 
-두 번째는 이명령이 실행될 장소인 ActiveObject이다.
+두 번째는 이 명령이 실행될 장소인 ActiveObject이다.
 마지막 인자는 wakeup이라는 또 다른 명령 객체이다.
 이 테스트가 기대하는 동작은 SleepCommand가 일정 시간만큼 기다렸다가 wakeup 명령을 실행하는 것이다.
 
